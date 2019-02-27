@@ -9,28 +9,29 @@ namespace l3
     class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("Выбирите пункт меню \n   1)\n    2)\n    3)");
+        { int a = 0; int b = 0;
+start:
+            Console.WriteLine("Выбирите пункт меню \n    1)Введите A\n    2)Введите B\n    3)Операция +");
             string q = Console.ReadLine();
-            int a = 0; int b = 0;
-            start:
+           
+            
             switch (q)
             {
                 case "1":
                         Console.WriteLine("\n\n");
                         Console.Write("Enter A: ");
-                        a = int.Parse(Console.ReadLine());
+                        a = int.Parse(Console.ReadLine(a));
                     goto start;
-                    break;
+                   
                 case "2":
                     Console.WriteLine("\n\n");
                     Console.Write("Enter B: ");
                     b = int.Parse(Console.ReadLine());
-                    break;
+                    goto start;
                 case "3":
                     Console.WriteLine("\n\n");
                     Console.WriteLine("A-B = {0}", a + b);
-                    break;
+                    goto start;
 
             }
             
