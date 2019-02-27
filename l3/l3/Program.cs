@@ -29,6 +29,8 @@ namespace l3
                 int h = a / b;
                 Console.WriteLine("A/B = {0}", h);
             Console.WriteLine("A/B = {0}", h);
+            Console.WriteLine("A/B = {0}", h);
+            Console.WriteLine("A/B = {0}", h);
 
         }
     }
