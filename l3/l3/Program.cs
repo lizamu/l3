@@ -43,6 +43,12 @@ start:
                     Console.WriteLine();
                     goto start;
 
+                case "5":
+                    Console.Write("\n");
+                    Console.Write("A*B = {0}", a * b);
+                    Console.WriteLine();
+                    goto start;
+
             }
         }
     }
