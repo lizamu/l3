@@ -49,6 +49,12 @@ start:
                     Console.WriteLine();
                     goto start;
 
+                case "6":
+                    Console.Write("\n");
+                    Console.Write("A/B = {0}", a / b);
+                    Console.WriteLine();
+                    goto start;
+
             }
         }
     }
