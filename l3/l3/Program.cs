@@ -11,7 +11,7 @@ namespace l3
         static void Main(string[] args)
         { int a = 0; int b = 0;
 start:
-            Console.WriteLine("Выбирите пункт меню \n    1)Введите A\n    2)Введите B\n    3)Операция +");
+            Console.WriteLine("Выбирите пункт меню \n    1)Введите A\n    2)Введите B\n    3)Операция +     4)Операция -       5)Операция *     6)Операция /");
             string q = Console.ReadLine();
            
             
@@ -28,6 +28,7 @@ start:
                     Console.Write("Enter B: ");
                     b = int.Parse(Console.ReadLine());
                     goto start;
+
                 case "3":
                     Console.WriteLine("\n\n");
                     Console.WriteLine("A-B = {0}", a + b);
