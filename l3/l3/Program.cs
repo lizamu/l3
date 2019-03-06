@@ -20,7 +20,7 @@ start:
                 case "1":
                         Console.WriteLine("\n\n");
                         Console.Write("Enter A: ");
-                        a = int.Parse(Console.ReadLine(a));
+                        a = int.Parse(Console.ReadLine());
                     goto start;
                    
                 case "2":
