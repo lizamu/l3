@@ -11,46 +11,41 @@ namespace l3
         static void Main(string[] args)
         { int a = 0; int b = 0;
 start:
-            Console.WriteLine("Выбирите пункт меню \n    1)Введите A\n    2)Введите B\n    3)Операция +     4)Операция -       5)Операция *     6)Операция /");
+            Console.WriteLine("Выбирите пункт меню \n    1)Введите A\n    2)Введите B\n    3)Операция +\n    4)Операция -\n    5)Операция *\n    6)Операция /\n");
             string q = Console.ReadLine();
            
             
             switch (q)
             {
                 case "1":
-                        Console.WriteLine("\n\n");
+                        Console.Write("\n");
                         Console.Write("Enter A: ");
                         a = int.Parse(Console.ReadLine());
+                    Console.WriteLine();
                     goto start;
                    
                 case "2":
-                    Console.WriteLine("\n\n");
+                    Console.Write("\n");
                     Console.Write("Enter B: ");
                     b = int.Parse(Console.ReadLine());
+                    Console.WriteLine();
                     goto start;
 
                 case "3":
-                    Console.WriteLine("\n\n");
-                    Console.WriteLine("A-B = {0}", a + b);
+                    Console.Write("\n");
+                    Console.Write("A+B = {0}", a + b);
+                    Console.WriteLine();
                     goto start;
 
+                case "4":
+                    Console.Write("\n");
+                    Console.Write("A-B = {0}", a - b);
+                    Console.WriteLine();
+                    goto start;
             }
             
             
-
-               /*
-
-                int d = a - b;
-                Console.WriteLine("A-B = {0}", d);
-
-                int g = a * b;
-                Console.WriteLine("A*B = {0}", g);
-
-                int h = a / b;
-                Console.WriteLine("A/B = {0}", h);
-            Console.WriteLine("A/B = {0}", h);
-            Console.WriteLine("A/B = {0}", h);
-            Console.WriteLine("A/B = {0}", h);*/
+          
 
         }
     }
