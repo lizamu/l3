@@ -36,11 +36,10 @@ start:
                     Console.Write("A-B = {0}", a - b);
                     Console.WriteLine();
                     goto start;
-            }
-            
-            
-          
 
+
+
+            }
         }
     }
 }
