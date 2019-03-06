@@ -37,8 +37,12 @@ start:
                     Console.WriteLine();
                     goto start;
 
-                
-              
+                case "4":
+                    Console.Write("\n");
+                    Console.Write("A-B = {0}", a - b);
+                    Console.WriteLine();
+                    goto start;
+
             }
         }
     }
